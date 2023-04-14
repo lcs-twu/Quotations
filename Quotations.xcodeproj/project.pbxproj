@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		81671DD929E9D9E200F5FB5B /* QuotationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81671DD829E9D9E200F5FB5B /* QuotationsApp.swift */; };
-		81671DDB29E9D9E200F5FB5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81671DDA29E9D9E200F5FB5B /* ContentView.swift */; };
 		81671DDD29E9D9E400F5FB5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81671DDC29E9D9E400F5FB5B /* Assets.xcassets */; };
 		81671DE029E9D9E400F5FB5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81671DDF29E9D9E400F5FB5B /* Preview Assets.xcassets */; };
+		81671DE729E9D9F700F5FB5B /* QuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81671DE629E9D9F700F5FB5B /* QuotesView.swift */; };
+		81671DEB29E9DA5400F5FB5B /* Quotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81671DEA29E9DA5400F5FB5B /* Quotation.swift */; };
+		81671DEE29E9DB4100F5FB5B /* NetWorkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81671DED29E9DB4100F5FB5B /* NetWorkServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81671DD529E9D9E200F5FB5B /* Quotations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81671DD829E9D9E200F5FB5B /* QuotationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationsApp.swift; sourceTree = "<group>"; };
-		81671DDA29E9D9E200F5FB5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		81671DDC29E9D9E400F5FB5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81671DDF29E9D9E400F5FB5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81671DE629E9D9F700F5FB5B /* QuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesView.swift; sourceTree = "<group>"; };
+		81671DEA29E9DA5400F5FB5B /* Quotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotation.swift; sourceTree = "<group>"; };
+		81671DED29E9DB4100F5FB5B /* NetWorkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				81671DD829E9D9E200F5FB5B /* QuotationsApp.swift */,
-				81671DDA29E9D9E200F5FB5B /* ContentView.swift */,
+				81671DE929E9DA1600F5FB5B /* Models */,
+				81671DEC29E9DB2F00F5FB5B /* Services */,
+				81671DE829E9D9FB00F5FB5B /* Views */,
 				81671DDC29E9D9E400F5FB5B /* Assets.xcassets */,
 				81671DDE29E9D9E400F5FB5B /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				81671DDF29E9D9E400F5FB5B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81671DE829E9D9FB00F5FB5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81671DE629E9D9F700F5FB5B /* QuotesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		81671DE929E9DA1600F5FB5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81671DEA29E9DA5400F5FB5B /* Quotation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		81671DEC29E9DB2F00F5FB5B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				81671DED29E9DB4100F5FB5B /* NetWorkServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81671DDB29E9D9E200F5FB5B /* ContentView.swift in Sources */,
 				81671DD929E9D9E200F5FB5B /* QuotationsApp.swift in Sources */,
+				81671DE729E9D9F700F5FB5B /* QuotesView.swift in Sources */,
+				81671DEE29E9DB4100F5FB5B /* NetWorkServices.swift in Sources */,
+				81671DEB29E9DA5400F5FB5B /* Quotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
